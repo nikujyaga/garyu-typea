@@ -21,7 +21,7 @@ jobs:
       - name: rsync deploy
         run: rsync -auzrv --delete ./ $SSH_USER@$SSH_HOST:$DEPLOY_PATH --exclude ".git/" -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${SSH_PORT}" 
         env:
-          SSH_PORT: ${{ secrets.SSH_PORT }}
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
