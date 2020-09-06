@@ -620,6 +620,12 @@ div#respond label[for=wp-comment-cookies-consent] {
   color: #333;
 }
 
+/* トップページサイドバー
+------------------------------ */
+div#TopPageSidebarBlock {
+  margin-bottom: 1em;
+}
+
 /* サイドバーウィジェット
 ------------------------------ */
 div.sidebar01,
