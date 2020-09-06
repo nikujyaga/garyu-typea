@@ -8,6 +8,29 @@ Version: 1.0.0
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
+/* native CSS
+------------------------------------------------------------ */
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+.alignright {
+  display: block;
+  margin: 0 auto 0 0;
+}
+.alignleft {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+  height: auto;
+  max-width: 100%;
+}
+ 
+/* 基本定義
+------------------------------------------------------------ */
 .menu-item > a:before {
   display: inline-block;
   font: 16px/1 FontAwesome;
