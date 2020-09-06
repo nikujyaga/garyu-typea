@@ -652,9 +652,11 @@ div.sidebar02Title:after {
   border-right-color: #fff;
 }
 
-div.sidebar01 div.myLinkModule,
-div.sidebar02 div.myLinkModule {
-  min-width: none;
+@media screen and (min-width: 600px) {
+  div.sidebar01 div.myLinkModule,
+  div.sidebar02 div.myLinkModule {
+    min-width: none;
+  }
 }
 
 /* 記事下のウィジェットタイトル
